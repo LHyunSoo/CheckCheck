@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearlayout1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -7,10 +8,27 @@
 
     <LinearLayout
         android:id="@+id/linearlayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:orientation="vertical">
+        android:layout_width="385dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
 
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:paddingLeft="10dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="이메일 주소"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </LinearLayout>
 
     <LinearLayout
